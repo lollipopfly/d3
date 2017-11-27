@@ -10,18 +10,18 @@ d3.json("https://api.myjson.com/bins/4sw50", function(error, data) {
 		barWidth = 40;
 
 	// X scale
-	var yScale = d3.scaleLinear()
-			.domain([0, d3.max(data, function(d, i) {
-				return d.responses
-			})])
-			.range([h, 0]);
-
-	// Y scale
 	var xScale = d3.scaleBand()
 			.domain(data.map(function(d, i) {
 				return d.receive_date
 			}))
 			.rangeRound([0, w]);
+	// Y scale
+
+	var yScale = d3.scaleLinear()
+			.domain([0, d3.max(data, function(d, i) {
+				return d.responses
+			})])
+			.range([h, 0]);
 
 	// Make chart
 	var chart = d3.select(".chart")

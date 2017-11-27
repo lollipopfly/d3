@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D3 Dots with rules(Scatterplot)</title>
+	<script src="../../d3.js"></script>
+	<style>
+		svg {
+			background: #f5f5f5;
+		}
+		rect {
+			fill: #2d978a;
+			transition: fill .4s;
+			cursor: pointer;
+		}
+		rect:hover {
+			fill: orange;
+		}
+		.axis--x text {
+			fill: #333;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bar dots with rules (Scatterplot)</h1>
+
+	<svg class="chart"></svg>
+
+	<script src='../d3.js'></script>
+	<script src='script.js'></script>
+</body>
+</html>
