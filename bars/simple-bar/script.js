@@ -44,7 +44,3 @@ bar.append("text")
 		})
 		.attr("dx", ".35em")
 		.text(function(d) { return d; });
-
-
-
-
